@@ -66,11 +66,21 @@ In this challenge, you will:
 
    ```bash
    ls -l
+   (-l ) all info
+   
    ls -lS
+   all info + sort
+   
    ls -lh
+   all info + Human readable
    ls -la
+   all info + all hidden
    ls -l /
+   all info aus dem root verzeichniss
+   
    ls -l /home
+
+   all info aus dem /home verzeichniss
    ```
 
 5. **Changing Directories**
@@ -102,12 +112,28 @@ In this challenge, you will:
 ## 3) Questions
 
 - What does the `pwd` command show, and why is it different from `~` in the prompt?
+  pwd shows current path and cd ~ brings u to /home/username
+  
 - How are filenames structured in a filesystem, and what do prefixes and suffixes tell us?
+  suffixes of file means file extension, filenames structured alphabetic.
+  
 - What is the difference between an absolute and a relative path?
+  absoluth path > /home/username/blabla/text.txt relativ path pwd = /home/nikita/ , relativ path > blabla/text.txt
+  
 - How does the `cd` command change your working directory?
+- cd brings u to /home/username.
+- 
 - What does the `ls` command show, and what do its options (`-l`, `-S`, `-h`, `-a`) do?
+- ls shows availible files in current path, -l = large? -S = sort? -h = HumanReadible -a = Hidden?
+- 
 - What is the purpose of `cd -`, `cd ..`, and just `cd`?
+- just cd brings u to /home/username
+- cd .. brings u to subordinated directory
+- cd - brings u to directory u was befor
+- 
+- 
 - Why might it be useful to see the full path of a file using `realpath`?
+in case we are working with absolute path like in scripts.
 
 ## 4) Advice
 
